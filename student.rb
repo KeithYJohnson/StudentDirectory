@@ -87,24 +87,20 @@ print "Enter Student or Instructor, l to load, q to save and quit: "
 
 while ((input = gets.strip.chomp)!="q") do 
   if input =="l"
-    @directory += YAML.load_documents(File.open('student_directory.yml'))
+    @directory << YAML.load_documents(File.open('student_directory.yml'))
   else 
     type = Person.create_person(input)
     type.questions
-    
 
-
-
-      
     # Append this to our yaml file
-    @directory.push type.to_yaml
+    @directory << type.to_yaml
     puts @directory
-    print "Enter Student or Instructor, q to save and quit: "
+    print "Enter Student or Instructor, l to load, q to save and quit: "
   end
 end
 
 # Open a student_directory.yml YAML file and write it out on one line
-File.open("student_directory.yml", 'a') { |f| f.write(@directory) } 
+# File.open("student_directory.yml", 'a') { |f| f.write(@directory) } 
 
 # when "l" # refers to a case statement with when "student" when "instructor"
 # @directory += YAML.load_documents(File.open('student_directory.yml'))
@@ -117,8 +113,8 @@ File.open("student_directory.yml", 'a') { |f| f.write(@directory) }
 # but then use again and again, passing around 
 # code as a variable in a sense
 
-#File.open('student_directory.yml, 'w") {|f|
-# @directory.compact.each do |person|
-#   f.write(person.to_yaml)
-# end
-#}
+File.open("student_directory.yml", 'w') {|f|
+@directory.compact.each do |person|
+  f.write(person.to_yaml)
+end
+}

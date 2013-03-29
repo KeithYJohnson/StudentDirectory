@@ -1,1 +1,77 @@
-["--- !ruby/object:Student\nname: Keith\nemail: keithyjohnson@gmail.com\nfavplace: idk im new\nwherefrom: milwaukee\ngithub_user: keithyjohnson\ntwitter: ! '@keithyjohnson'\nfun_fact: heyeyeyey\nreason_for_joining: learning duh\n"][["--- !ruby/object:Student\nname: Keith\nemail: keithyjohnson@gmail.com\nfavplace: idk im new\nwherefrom: milwaukee\ngithub_user: keithyjohnson\ntwitter: ! '@keithyjohnson'\nfun_fact: heyeyeyey\nreason_for_joining: learning duh\n"]]
+--- ! '--- !ruby/object:Student
+
+  name: Apollo
+
+  email: Creed
+
+  favplace: Jersey
+
+  wherefrom: Creedville
+
+  github_user: What''s that?
+
+  twitter: Huh?
+
+  fun_fact: I took a dive in Rocky I
+
+  reason_for_joining: have to train
+
+'
+---
+- - ! '--- !ruby/object:Student
+
+    name: k
+
+    email: k
+
+    favplace: k
+
+    wherefrom: k
+
+    github_user: k
+
+    twitter: k
+
+    fun_fact: k
+
+    reason_for_joining: k
+
+'
+- ! '--- !ruby/object:Student
+
+  name: a
+
+  email: a
+
+  favplace: a
+
+  wherefrom: a
+
+  github_user: a
+
+  twitter: a
+
+  fun_fact: a
+
+  reason_for_joining: fun
+
+'
+- ! '--- !ruby/object:Student
+
+  name: Keith
+
+  email: keithyjohnson@gmail.com
+
+  favplace: Don''t know
+
+  wherefrom: Milwaukee
+
+  github_user: Keithyjohnson
+
+  twitter: ! ''@keithyjohnson''
+
+  fun_fact: a fun fact
+
+  reason_for_joining: to be a developer
+
+'
