@@ -10,6 +10,12 @@ class Person
   attr_accessor :favplace
   attr_accessor :wherefrom
 
+  def initialize(options = {}) #added in on 3.28, setting everything to lunch
+    
+    self.name = options[:name] #if you don't supply a name, it won't blow up
+    self.email = options[:email]
+  end
+
 
   def self.create_person(type)
     case type
@@ -67,17 +73,19 @@ end
 @directory = ""
 puts "Student Directory, v0.0.1 by Dan Garland"
 print "Enter Student or Instructor, q to save and quit: "
-type = Person.create_person(gets.strip.chomp)
-type.questions
+
+while ((input = gets.strip.chomp)!="q") do 
+  type = Person.create_person(input)
+  type.questions
 
 
 
-  
-  # Append this to our yaml file
-@directory += type.to_yaml
-puts @directory
-  
-#end
+    
+    # Append this to our yaml file
+  @directory += type.to_yaml
+  puts @directory
+  print "Enter Student or Instructor, q to save and quit: "
+end
 
 # Open a student_directory.yml YAML file and write it out on one line
 File.open('student_directory.yml', 'a') { |f| f.write(@directory) } 

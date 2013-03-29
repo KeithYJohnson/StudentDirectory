@@ -7,3 +7,12 @@ github_user: ss
 twitter: ''
 fun_fact: s
 reason_for_joining: s
+--- !ruby/object:Student
+name: k
+email: k
+favplace: k
+wherefrom: k
+github_user: k
+twitter: k
+fun_fact: k
+reason_for_joining: k
