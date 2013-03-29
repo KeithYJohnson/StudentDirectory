@@ -1,18 +1,1 @@
---- !ruby/object:Student
-name: df
-email: df
-favplace: d
-wherefrom: ''
-github_user: ss
-twitter: ''
-fun_fact: s
-reason_for_joining: s
---- !ruby/object:Student
-name: k
-email: k
-favplace: k
-wherefrom: k
-github_user: k
-twitter: k
-fun_fact: k
-reason_for_joining: k
+["--- !ruby/object:Student\nname: Keith\nemail: keithyjohnson@gmail.com\nfavplace: idk im new\nwherefrom: milwaukee\ngithub_user: keithyjohnson\ntwitter: ! '@keithyjohnson'\nfun_fact: heyeyeyey\nreason_for_joining: learning duh\n"][["--- !ruby/object:Student\nname: Keith\nemail: keithyjohnson@gmail.com\nfavplace: idk im new\nwherefrom: milwaukee\ngithub_user: keithyjohnson\ntwitter: ! '@keithyjohnson'\nfun_fact: heyeyeyey\nreason_for_joining: learning duh\n"]]
